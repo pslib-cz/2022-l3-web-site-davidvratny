@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="media/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="media/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Candies</title>
+</head>
+<body>
+    <div class="main-znacky">
+        <header class="main_header">
+            <nav class="mainmenu__header">
+
+                <a href="index.html"><img class="mainmenu__header-logo" src="media/photos/CandiesLogo.svg" alt="Candies logo"></a>
+
+                
+                <a class="hamburger-menu" onclick="Hamburger()" href="javascript:void(0)">
+                    <img src="media/photos/hamburger.svg" alt="Menu">
+                </a>
+                <script>
+                    function Hamburger() {
+                        document.getElementById("hamburger-menu").classList.toggle("active");
+                        }
+                </script>
+                <ul id="hamburger-menu" class="mainmenu__list">
+                    <li><a href="index.html">Novinky</a></li>
+                    <li class="isActive"><a href="znacky.html">Značky</a></li>
+                    <li><a href="oNas.html">O nás</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>    
+                </ul>
+            </nav>
+            <figure class="header__caption">
+                <div class="caption">
+                    <p></p>
+                    <h1>Značkové boty i oblečnení</h1>
+                    <p>Zde vám představíme značky oblečení i bot, které u nás můžete najít. Vše na jednom místě.</p>
+                    <p class="produkt__cta"><a href="index.html" class="button">Přejít na novinky</a></p>
+                </div>
+            </figure>
+        </header>
+        <div class="caption__znacky">
+            <img class="mainmenu_znacky" src="./media/photos/Icons/adidas.png" alt="">
+            <img class="mainmenu_znacky" src="./media/photos/Icons/airJordan.png" alt="">
+            <img class="mainmenu_znacky" src="./media/photos/Icons/nike.svg" alt="">
+        </div>
+    </div>
+    <main>
+        <div class="znacky_nadpis">Naše značky</div>
+        <section class="znacky">
+            <div class="znacky_boty-foto">
+                <img class="znacky__logo" src="./media/photos/pinkDunks.webp" alt="Boty">
+            </div>
+            <div class="znacky__informace">       
+                <p class="znacky__informace-nazev">Nike</p>
+                    <p class="znacky__informace-popis">Tato značka se na našem e-shopu objevuje často. Značka byla založena roku 1964 a hned se proslavila. Přinášíme vám i různé kolaborace s různými návrháři jako je například Virgil Abloh. Tyto kousky jinde nenajdete za lepší cenu
+                    </p>
+                    <p class="produkt__cta"><a href="index.html" class="button">Zjistit více</a></p>
+            </div>
+            <div class="znacky_boty-foto">
+                <img class="znacky__logo" src="./media/photos/ultraBoosts.jpeg" alt="Boty">
+            </div>
+                <div class="znacky__informace">       
+                <p class="znacky__informace-nazev">Adidas</p>
+                <p class="znacky__informace-popis">Adidas je klasika už od roku 1948 klasikou, která neomrzí. Náš e-shop je nabitý těmito klasikami jak dražšími tak i levnějšími. Určitě se zde objevují i Yeezy, která je kolaborací zpěváka Kaneyho Westa a Adidasu.</p>
+                <p class="produkt__cta"><a href="index.html" class="button">Zjistit více</a></p>
+            </div>
+            <div class="znacky_boty-foto">
+                <img class="znacky__logo" src="./media/photos/redHigh.webp" alt="Boty">
+            </div>
+                <div class="znacky__informace">       
+                <p class="znacky__informace-nazev">Air Jordan</p>
+                <p class="znacky__informace-popis">Air Jordan začínala jako basketbalová bota, ale rychle se dostala i mezi fashion komunitu. Každý drop této značky sledujeme a přinášíme Vám jen to nejlepší. U nás máte na výběr z více siluet, každý se najde v něčem jiném.</p>
+                <p class="produkt__cta"><a href="index.html" class="button">Zjistit více</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__znacky">
+        <div class="footer_obsah">
+            <div class="footer_info">
+                <p class="footer__item-zero">Candies</p>
+                <p class="footer__item-first">+420 730 630 136</p>
+                <p class="footer__item-second"><a class="mail" href = "mailto:c4ndies.cz@gmail.com">c4ndies.cz@gmail.com</a></p>
+            </div>
+            <div class="footer_info">
+                <p class="footer__item-third">Sociální sítě</p>
+                <p class="footer__item-forfth">candies.cz</p>
+                <p class="footer__item-fifth">Candies.cz</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

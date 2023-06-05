@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="media/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="media/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Candies</title>
+</head>
+<body>
+    <div class="main-oNas">
+        <header class="main_header">
+            <nav class="mainmenu__header">
+
+                <a href="index.html"><img class="mainmenu__header-logo" src="media/photos/CandiesLogo.svg" alt="Candies logo"></a>
+
+                
+                <a class="hamburger-menu" onclick="Hamburger()" href="javascript:void(0)">
+                    <img src="media/photos/hamburger.svg" alt="Menu">
+                </a>
+                <script>
+                    function Hamburger() {
+                        document.getElementById("hamburger-menu").classList.toggle("active");
+                        }
+                </script>
+                <ul id="hamburger-menu" class="mainmenu__list">
+                    <li><a href="index.html">Novinky</a></li>
+                    <li><a href="znacky.html">Značky</a></li>
+                    <li><a href="oNas.html">O nás</a></li>
+                    <li class="isActive"><a href="kontakt.html">Kontakt</a></li>    
+                </ul>
+            </nav>
+            <figure class="header__caption">
+                <figcaption class="caption">
+                    <div>
+                    <h1>Kontakt</h1>
+                    <p>Jestli máte jakékoliv otázky, neváhejte nás kontaktovat!</p>
+                    </div>
+                    
+                    <p class="produkt__cta oNas__cta"><a href="index.html" class="button">Přejít na novinky</a></p>
+                </figcaption>
+            </figure>
+            <section class="mainmenu__kontakt">
+                <img class="mainmenu__kontakt-img" src="./media/photos/CandiesLogo.svg" alt="">
+                <div class="mainmenu__kontakt-text">
+                    <p>Instagram: candies.cz</p>
+                    <p>TikTok: Candies.cz</p>
+                    <p>Facebook: Candies.cz</p>
+                    <p><a class="mail" href = "mailto:c4ndies.cz@gmail.com">E-mail: c4ndies.cz@gmail.com</a></p>
+                </div>
+                
+            </section>
+        </header>
+        <div class="caption__znacky">
+            <img class="mainmenu_znacky" src="./media/photos/Icons/adidas.png" alt="">
+            <img class="mainmenu_znacky" src="./media/photos/Icons/airJordan.png" alt="">
+            <img class="mainmenu_znacky" src="./media/photos/Icons/nike.svg" alt="">
+        </div>
+    </div>
+    <main>
+    </main>
+    <footer class="footer__znacky">
+        <div class="footer_obsah">
+            <div class="footer_info">
+                <p class="footer__item-zero">Candies</p>
+                <p class="footer__item-first">+420 730 630 136</p>
+                <p class="footer__item-second"><a class="mail" href = "mailto:c4ndies.cz@gmail.com">c4ndies.cz@gmail.com</a></p>
+            </div>
+            <div class="footer_info">
+                <p class="footer__item-third">Sociální sítě</p>
+                <p class="footer__item-forfth">candies.cz</p>
+                <p class="footer__item-fifth">Candies.cz</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

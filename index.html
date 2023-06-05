@@ -2,12 +2,124 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <title>Tento webový projekt</title>
+    <link href="media/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="media/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Candies</title>
 </head>
 <body>
-    <h1>My Web Page</h1>    
+    <div class="background">
+        <header class="main_header">
+            <nav class="mainmenu__header">
+
+                <a href="index.html"><img class="mainmenu__header-logo" src="media/photos/CandiesLogo.svg" alt="Candies logo"></a>
+
+                
+                <a class="hamburger-menu" onclick="Hamburger()" href="javascript:void(0)">
+                    <img src="media/photos/hamburger.svg" alt="Menu">
+                </a>
+                <script>
+                    function Hamburger() {
+                        document.getElementById("hamburger-menu").classList.toggle("active");
+                        }
+                </script>
+                <ul id="hamburger-menu" class="mainmenu__list">
+                    <li class="isActive"><a href="index.html">Novinky</a></li>
+                    <li><a href="znacky.html">Značky</a></li>
+                    <li><a href="oNas.html">O nás</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>    
+                </ul>
+            </nav>
+            <figure class="header__caption">
+                <div class="caption">
+                    <p></p>
+                    <h1>Co je u nás nového?</h1>
+                    <p>Prozkoumejte novinky které vám přináší tým Candies</p>
+                    <p class="produkt__cta"><a href="znacky.html" class="button">Přejít na značky</a></p>
+                </div>
+                <div class="caption__img">
+                    <img class="mainmenu_shoes" src="./media/photos/candies/beigeJordan.webp" alt="Boty">
+                </div>
+            </figure>
+        </header>
+    </div>
+    <main>
+        <div class="novinky_nadpis">Naše novinky</div>
+        <section class="novinky">
+            
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                    <img src="./media/photos/chunkyDunky.png" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">Nike Dunk Low</p>
+                <p class="novinky_boty-sub">OG Atmosphere (W)</p>
+                <p class="novinky_boty-price">6 525 Kč</p>
+            </div>
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                    <img src="./media/photos/MainShoes.webp" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">Jordan 1 Retro</p>
+                <p class="novinky_boty-sub">OG Navy blue (W)</p>
+                <p class="novinky_boty-price">6 525 Kč</p>
+            </div>
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                    <img src="./media/photos/pinkDunks.webp" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">Nike Dunk Low</p>
+                <p class="novinky_boty-sub">OG pink (W)</p>
+                <p class="novinky_boty-price">6 525 Kč</p>
+            </div>
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                    <img src="./media/photos/redHigh.webp" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">Jordan 1 Retro</p>
+                <p class="novinky_boty-sub">High OG Heritage</p>
+                <p class="novinky_boty-price">6 525 Kč</p>
+            </div>
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                    <img src="./media/photos/pinkHigh.png" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">Jordan 1 Mid</p>
+                <p class="novinky_boty-sub">OG Atmosphere (W)</p>
+                <p class="novinky_boty-price">6 525 Kč</p>
+            </div>
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                    <img src="./media/photos/greyDunks.png" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">Nike Dunk Low</p>
+                <p class="novinky_boty-sub">SE Sand Drift (W)</p>
+                <p class="novinky_boty-price">6 525 Kč</p>
+            </div>
+            <div class="novinky_boty">
+                <div class="novinky_boty-foto">
+                <img class="comingsoon" src="./media/photos/candies/comingSoon.png" alt="Boty">
+                </div>
+                <p class="novinky_boty-img">?</p>
+                <p class="novinky_boty-sub">?</p>
+                <p class="novinky_boty-price">? Kč</p>
+            </div>
+        </section>
+        <div class="noviny__caption">Mnohé víc již brzy...</div>
+    </main>
+    <footer>
+        <div class="footer_obsah">
+            <div class="footer_info">
+                <p class="footer__item-zero">Candies</p>
+                <p class="footer__item-first">+420 730 630 136</p>
+                <p class="footer__item-second"><a class="mail" href = "mailto:c4ndies.cz@gmail.com">c4ndies.cz@gmail.com</a></p>
+            </div>
+            <div class="footer_info">
+                <p class="footer__item-third">Sociální sítě</p>
+                <p class="footer__item-forfth">candies.cz</p>
+                <p class="footer__item-fifth">Candies.cz</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
